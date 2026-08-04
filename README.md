@@ -9,7 +9,17 @@ Mo-Search maintains a local index of the files and locations you choose and
 returns ranked results without uploading indexed content to a cloud service.
 It has been in continuous development since 2005.
 
-![Ranked Mo-Search results and integrated viewer](media/ranked-results.webp)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="media/simple-search-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="media/simple-search-light.gif">
+  <img alt="Searching a local index and opening a match in the integrated viewer" src="media/simple-search-dark.gif">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="media/ranked-results.webp">
+  <source media="(prefers-color-scheme: light)" srcset="media/ranked-results-light.webp">
+  <img alt="Ranked Mo-Search results and integrated viewer" src="media/ranked-results.webp">
+</picture>
 
 ## What it does
 
@@ -23,11 +33,23 @@ It has been in continuous development since 2005.
 - Adds practical file tools around search: duplicate finding, folder sizing,
   favorites, and search history.
 
-![Advanced search filters](media/advanced-filters.webp)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="media/advanced-filters.webp">
+  <source media="(prefers-color-scheme: light)" srcset="media/advanced-filters-light.webp">
+  <img alt="Advanced search filters" src="media/advanced-filters.webp">
+</picture>
 
-![Integrated file viewer](media/integrated-viewer.webp)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="media/integrated-viewer.webp">
+  <source media="(prefers-color-scheme: light)" srcset="media/integrated-viewer-light.webp">
+  <img alt="Integrated file viewer" src="media/integrated-viewer.webp">
+</picture>
 
-![Indexer status](media/indexer-status.webp)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="media/indexer-status.webp">
+  <source media="(prefers-color-scheme: light)" srcset="media/indexer-status-light.webp">
+  <img alt="Indexer status" src="media/indexer-status.webp">
+</picture>
 
 ## How it compares
 
