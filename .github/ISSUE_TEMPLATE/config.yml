@@ -1,0 +1,18 @@
+# Blank issues are disabled so every report arrives through a structured form.
+# The contact links exist mainly to route two kinds of traffic out of this
+# queue before it is filed: MoContext reports (separate repository, one shared
+# installer) and anything private or security-related.
+blank_issues_enabled: false
+contact_links:
+  - name: MoContext issue (MCP clients, agent retrieval, context memory)
+    url: https://github.com/Meauxsoft/mocontext/issues/new/choose
+    about: MoContext ships inside the Mo-Search installer but keeps its own tracker. File MCP client, retrieval, memory, and MoContext UI reports there.
+  - name: Security report
+    url: https://github.com/Meauxsoft/mo-search/blob/main/SECURITY.md
+    about: Do not open a public issue for a suspected vulnerability. Email Questions@meauxsoft.com with the subject [Security] Mo-Search.
+  - name: Private, licensing, or purchase question
+    url: mailto:Questions@meauxsoft.com
+    about: Licensing, sensitive diagnostics, and anything that should not be posted publicly.
+  - name: Documentation and downloads
+    url: https://www.meauxsoft.com
+    about: Product page, the current installer, and browser-friendly documentation.

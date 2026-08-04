@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible Mo-Search problem
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not paste private file contents,
+        license data, tokens, or personal paths. Security reports belong at
+        Questions@meauxsoft.com with subject `[Security] Mo-Search`.
+  - type: input
+    id: version
+    attributes:
+      label: Mo-Search version
+      placeholder: "For example: 9.50.8"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Search and ranking
+        - Indexing
+        - Viewer and user interface
+        - Installer and updates
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest safe, repeatable example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed private content, license data, tokens, and personal paths.
+          required: true
