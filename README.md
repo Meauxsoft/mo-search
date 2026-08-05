@@ -91,6 +91,12 @@ license shown by the current installer for the applicable terms.
 Mo-Search supports Windows 10 and 11. Download the current installer from the
 [official Meauxsoft website](https://www.meauxsoft.com).
 
+Signed installers are also published here under
+[Releases](https://github.com/Meauxsoft/mo-search/releases), each with a
+SHA-256 checksum, if you prefer a versioned download or need an earlier
+release. The website is the canonical source and is what the application's
+update check uses.
+
 This repository is a public product and documentation front door. It does not
 contain the proprietary Mo-Search source code.
 
@@ -103,6 +109,7 @@ that provider's privacy and retention terms. See [PRIVACY.md](PRIVACY.md).
 
 ## Documentation and support
 
+- [Releases](https://github.com/Meauxsoft/mo-search/releases) — signed installers with checksums
 - [Changelog](CHANGELOG.md) — released versions, back to 2005
 - [Privacy](PRIVACY.md)
 - [Support and issue reporting](SUPPORT.md)
