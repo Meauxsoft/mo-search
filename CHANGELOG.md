@@ -1,8 +1,23 @@
-# Mo-Search release history
+﻿# Mo-Search release history
 
-Mo-Search has been in continuous development since 2005. This changelog documents released versions through **9.50.8**; work in progress for a future release is not listed here.
+Mo-Search has been in continuous development since 2005. This changelog documents released versions through **26.0**; work in progress for a future release is not listed here.
 
 Generated from the Meauxsoft release history by `build-changelog.ps1`. Do not edit by hand.
+
+## 26.0 — 2026, Sep 21
+
+_A 40-day trial, a $50 license, and MoContext on this PC_
+
+- Version: Public version is 26.0 (calendar year.release). Later 26.x and 27.0 update in place on the same install folders and exe name. 9.50 remains a separate installed product.
+- Trial: 40-day trial of the full product, not a reduced build.
+- License: $50 buys a 365-day license. Paddle emails an MS1. key to the buyer to paste in the app. Not a subscription.
+- Buy: In-app and website Buy paths open Buy_MoSearch.html. 9.x donate / MOS9V codes do not license 26.0.
+- MoContext: Ships with Mo-Search as the local MCP server. Compatible AI clients search and read from the Mo-Search index on this PC; nothing is uploaded.
+- MoContext: Settings backup/restore, daily auto-backup, and a first-run choice to Restore or Start fresh. Default backup folder is Documents\MoBackups.
+- Updates: AppUpdater downloads the installer over HTTPS and requires a valid Authenticode signature before apply.
+- Search Home: Search Home, Simple Search counts, and Buy chrome share one layout so the combo, brand, and history cannot drift.
+- Search: Text * ? ^ wildcards work in the search box without hanging the results list.
+- MoVault: Private vault on this PC is coming soon. It is not included as a download with Mo-Search 26.0.
 
 ## 9.50.8 — 2026, Jul 17
 
@@ -190,57 +205,11 @@ _Rebuilt search engine, 30+ new file types, Python AI interface_
 - Installer: Updated to Visual Studio 2026 v145 toolset and Windows SDK 10.0.26100.0.
 - UX: Various UI fixes and improvements.
 
-## 9.49.24 — 2026, Jan 19
-
-- Indexer: Enable indexing larger files corpus (Added threshold-based Ram compression to continue past previous memory exhaustion).
-- Indexer: Optimized with further memory reductions (including switch to 1-way efficient Word hash map, from unnecessary ~900-way).
-- Indexer: Adjusted SQLite temp_store from MEMORY to DEFAULT (corruption root cause).
-- Indexer: Adjusted SQLite to always use WAL journaling mode (corruption root cause).
-- Indexer: Adjusted SQLite synchronous from FULL to NORMAL (improves speed).
-- Indexer: Allocated more RAM for SQLite page cache, to reduce cache misses.
-- Indexer: Fixed long-standing occasional issue of files not being fully indexed (plus reams of log noise - m_miiWordID_Correction).
-- Indexer: Fixed long-standing rare issue with stability, due to lack of proper synchronization around two core hash maps (CMapIntToStrC, XMapStrToInt).
-- Indexer: Improved logging of memory usage (GetSqliteMemUsage, HAVE_MALLOC_USABLE_SIZE).
-- Indexer: Improved log details on memory usage (LogSqliteMemoryUsage).
-- Indexer: Improved diagnostics when exceptions occur (try/catch around more code, preceding steps within stack).
-- FileViewer: Improvements to XmlMinify viewer, to better handle malformed XML (plus similar improvements for html and xml).
-- FileViewer: Fixed long-standing issues around search within, match highlighting, and match counting when switching between files.
-- FileViewer: Some optimizations around switching files, to reduce reloading/disposing/constructing needless UI objects.
-- Config: In Paths dialog, when adding an Include/Exclude... the browse for path dialog no longer uses confusing path color coding (red/white/gray).
-- Etc: Various small optimization, code cleanup, and improvements based on static code analysis.
-- ResultsList: In both Explore and Search modes, fixed weirdness/incompleteness when the user deletes files within the results list.
-- Indexer: Other optimizations targeted for indexing speed and memory usage.
-- Update VS to 2026 version 18.1.1 (and PlatformToolset from v143 to v145)
-- Indexer: Added new UriHistory table, to track per-file indexing history (handy for 3rd party / AI utilization)
-- Installer: Removed annoying page for desktop shortcut creation, and annoying prompt "...already installed" when updating Mo-Search.
-- Installer: Do a better showing the Index config dialog after install/update, frontAndCenter
-- Indexer: Exclude omit folder "System Volume Information"
-- Indexer: Add four more indexer threads for multi-core speed improvements (from 7 to 11)
-- Indexer: IndexTime is corrected to UTC (As done with ModifiedTime and CreatedTime)
-- Indexer: Optimized SetMinMax to Simple bitset - zero hash overhead map saving CPU and RAM.
-- Indexer: Fixed long-standing bug/crash in CTextFileRead::GuessCharacterCount()
-- Indexer: By default also index .md files (markdown)
-- AI: Added local-first Agentic AI LLM interface via MoContext HTTP server.
-- UX: Explore tree/advanced is wider by default.
-- UX: MComboBox: Ctrl-z restores user's pre-edit text (undo).
-- UX: BrowseFolder does a better job checking user's selected path (during OK validation).
-- UX: Right-click Results files > "Selected File" to copy path+File (new option)
-- UX: Right-click Results files > "Export Text" also includes the path when not visible in the list (improved option)
-- UX: Added Results files > Indexed Date (diag column)/ Created Date/
-- UX: Setup, paste path for new Include path, press return... path was not added (bug fix)
-- UX: results list, select items (control-a) was not working (bug fix)
-- UX: results list, delete selected (530 selected), says "delete all 2 items"(bug fix).
-- UX: Options > Add path > OK... Go ahead and index that new path (Upon add/modify multiple paths/extensions... then index all at once)/
-- UX: AutoIndexer: Add minimize button.
-- UX: FolderSize: Add maximize button.
-- bug: CFileHelper::IsDirectory now returns false when given an invalid path (before it returned true, which is wrong)
-- bug: CFileHelper::RemovePath now returns false when the path is empty
-- uplift sqlite to 3.51.2
-
 ## Earlier releases
 
 | Version | Date | Release |
 |---|---|---|
+| 9.49.24 | 2026, Jan 19 | 44 changes |
 | 9.49.13 | 2025, Dec 31 | 49 changes |
 | 9.49.10 | 2025, Nov 11 | 7 changes |
 | 9.49.9 | 2025, Oct 20 | 2 changes |

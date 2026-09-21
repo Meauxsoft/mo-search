@@ -1,6 +1,6 @@
 # Mo-Search
 
-> Documentation baseline: Mo-Search 9.50.8, the current public release.
+> Documentation baseline: Mo-Search 26.0, the current public release.
 
 **Full-text desktop search for Windows — your whole machine, indexed locally,
 ranked in milliseconds.**
@@ -16,9 +16,9 @@ It has been in continuous development since 2005.
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="media/ranked-results.webp">
-  <source media="(prefers-color-scheme: light)" srcset="media/ranked-results-light.webp">
-  <img alt="Ranked Mo-Search results and integrated viewer" src="media/ranked-results.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="media/search-hint-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="media/search-hint-light.gif">
+  <img alt="Mo-Search offering a spelling correction, then reusing a saved search" src="media/search-hint-dark.gif">
 </picture>
 
 ## What it does
@@ -89,7 +89,9 @@ license shown by the current installer for the applicable terms.
 ## Download and requirements
 
 Mo-Search supports Windows 10 and 11. Download the current installer from the
-[official Meauxsoft website](https://www.meauxsoft.com).
+[official Meauxsoft website](https://www.meauxsoft.com). Mo-Search 26.0 is $50
+for a 365-day license. MoVault is coming soon and is not a download from this
+repository.
 
 Signed installers are also published here under
 [Releases](https://github.com/Meauxsoft/mo-search/releases), each with a
